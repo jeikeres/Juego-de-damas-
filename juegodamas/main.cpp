@@ -74,8 +74,7 @@ void mover1()
     do{
       do{
           do{
-              do
-              {
+              do{
                   cout<<"turno jugador 2 fichas 0"<<endl;
                   cout<<"ingrese cordenada vertical"<<endl;
                   cin>>x;
@@ -86,11 +85,33 @@ void mover1()
                       cout<<"error vuelva a tirar no hay ficha en la casilla"<<x<<"-"<<y<<endl;
                   }while (tablero[x][y]!='0'&&tablero[x][y]!='c');//validacion para el tiro de movimiento
                   
+                  
                   do{
                       if(tablero[x][y]!='0')
                       {
-                       cout<<"";
-                         
+                       cout<<"selecione la nueva posicion de la ficha [1]izquierda-abajo [2]derecha abajo"<<endl;
+                       cin>>direccion;
+                       error=0;
+                       if(direccion>2||direccion<1)
+                       {
+                           cout<<"error escoga una opcion valida en dirrecion"<<endl;
+                           
+                           if((y==0&&direccion==1)||(y==7 &&direccion==2))
+                            {
+                               cout<<"error la pieza sale del tablero"<<endl;
+                            }
+                       }//fin if de moviemiento
+                       if(tablero[x][y]=='c'){
+                           cout<<"selecione [1]izquierda-abajo [2]derecha-abajo [3]izquierda-arriba [4]derecha-arriba"<<endl;
+                           cin>>direccion;
+                           error=0;
+                           if(direccion>2||direccion<1)
+                           { cout<<"error escoga una opcion valida en dirrecion"<<endl;}
+                           if((y==7&&direccion==2)||(y==0&&direccion==1)||(y==7&&direccion==4)||(y==0&&direccion==3)||(x==0&&direccion==4)||(x==0&&direccion==3)||(x==7&&direccion==4))
+                           {
+                               cout<<"error no puedes slirte del tablero" ;}
+                       }//fin if de movimiento
+                       
                       }
                   }
                       
