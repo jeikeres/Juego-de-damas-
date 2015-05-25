@@ -1,8 +1,6 @@
 /*  File:   main.cpp
  * Author: Jonathan Sepulveda Nuñez
- *         17563886-5
- *         Roberto Esparza
- *         17754205-9
+ *         Roberto Esparza 
  *         Joaquin Astudillo
  *  
  * Created on 23 de abril de 2015, 12:32
@@ -23,8 +21,8 @@ int turno=1;//TURNO PARA FICHAS X CUADNO CUANDO UN SUARIO MUEVE UNA FICHA EL TUR
 int direccion ;//INDICA HACIA DODNE QUIERE MOVER LA FICAH EL USUARIO
 int error ; //VALIDACION DE CUANDO COMES UNA FICHA EN DIAGONAL DE LA QUE VAS A COMER
 int contador=1; //SIRVE PARA VOID PRESENTACION
-int fichao=12;
-int fichax=12;// SIRVE PARA DETERMINAR CUANDO SE GANA O PIERDE UN JUEGO
+int fichao=15;//cantidad de piezas
+int fichax=15;// Cantidad de piezas
 int terminar=1;
 int contador_fichas_x= 9;//CINTADOR POR DEFAULT SI NO SE CAMBIA OPCIONE EN MODO ESPECIAL
 int contador_fichas_o= 9;
