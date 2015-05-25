@@ -1024,7 +1024,7 @@ int main(int argc, char** argv) {
                     }// FIN DE DAMAS
                     imprimir() ;
                     if(fichax==0){
-                        cout<<"JUEGO TERMINADO JUGADOR DOS A GANADO ESTA PARTIDA "<<endl;
+                        cout<<"JUEGO TERMINADO LA COMPUTADORA A GANADO ESTA PARTIDA "<<endl;
                         terminar=2;
                         break;
                     }
